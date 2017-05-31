@@ -16,6 +16,7 @@
       <p>Find the country's currency that you want to convert. For example, <b>CAD</b> (Candaian dollar) to <b>USD</b> (US dollar)</p>
 
         <div class="container">
+            <label for="currency">Currency:</label>
             <select id="currency">
                 <option value=AUD>Austrailian Dollar (AUD)</option>
                 <option value=CAD>Canadian Dollar (CAD)</option>
@@ -46,10 +47,10 @@
             </select>
             <button type="button" onclick="get_(document.getElementById('').value)">Exchange Currency</button>
         </div>
-
+        <br>
         <div>
         <div id="zipbox" class="control-group">
-          <label for="zip">Zip</label>
+          <label for="base">Base</label>
           <input type="text" name="zip" id="zip" placeholder="Type your ZIP code" />
         </div>
       </div>
