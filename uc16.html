@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Zip Code Finder</title>
+    <title>Foreign Exchange Rates and Currency Conversion</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,10 +11,43 @@
   </head>
   <body>
     <div class="container">
-      <h2>Zip Code Finder</h2>
+      <h2>Foreign Exchange Rates and Currency Conversion</h2>
       <br/>
-      <p>Try entering a zip code like <b>90210</b> Beverly Hills, CA!</p>
-      <div>
+      <p>Find the country's currency that you want to convert. For example, <b>CAD</b> (Candaian dollar) to <b>USD</b> (US dollar)</p>
+
+        <div class="container">
+            <select id="currency">
+                <option value=AUD>Austrailian Dollar (AUD)</option>
+                <option value=CAD>Canadian Dollar (CAD)</option>
+                <option value=CHF>Swiss France Dollar (CHF)</option>
+                <option value=CYP>Cyprus Pound (CYP)</option>
+                <option value=CZK>Czech Koruna (CZK)</option>
+                <option value=DKK>Danish Krone (DKK)</option>
+                <option value=EEK>Estonian Kroon Dollar (EEK)</option>
+                <option value=HKD>Hong Kong Dollar (HKD)</option>
+                <option value=HUF>Hungarian Forint Dollar (HUF)</option>
+                <option value=ISK>Icelandic Króna (ISK)</option>
+                <option value=JPY>Japanese Yen (JPY)</option>
+                <option value=KRW>South Korean Won (KRW)</option>
+                <option value=LTL>Lithuanian Litas (LTL)</option>
+                <option value=LVL>Latvian Lats (LVL)</option>
+                <option value=MTL>Maltese Lira (MTL)</option>
+                <option value=NOK>Norwegian Krone (NOK)</option>
+                <option value=NZD>New Zealand Dollar (NZD)</option>
+                <option value=PLN>Polish Zloty (PLN)</option>
+                <option value=ROL>Romanian Leu (ROL)</option>
+                <option value=SEK>Swedish Krona (SEK)</option>
+                <option value=SGD>Singapore Dollar (SGD)</option>
+                <option value=SIT>Slovenian Tolar (SIT)</option>
+                <option value=SKK>Slovak Koruna (SKK)</option>
+                <option value=TRL>Turkish LirauSD (TRL)</option>
+                <option value=USD>US Dollar (US)</option>
+                <option value=ZAR>South African Rand (ZAR)</option>
+            </select>
+            <button type="button" onclick="get_(document.getElementById('').value)">Exchange Currency</button>
+        </div>
+
+        <div>
         <div id="zipbox" class="control-group">
           <label for="zip">Zip</label>
           <input type="text" name="zip" id="zip" placeholder="Type your ZIP code" />
