@@ -28,3 +28,22 @@ function findZip(zipId) {
     httpRequest.open("GET", url, true);
     httpRequest.send();
 }
+
+/**
+ * Displays the zip code place given the JSON data
+ * @param {string} data JSON data representing place for given zip code
+ */
+function displayPlace(data){
+    var place = JSON.parse(data);
+    if(place.country === "none") {
+        document.getElementById("place").className = "alert alert-warning";
+        document.getElementById("place").innerHTML = "No place matches that zip code."
+    } else {
+        document.getElementById("place").className = "alert alert-success";
+        document.getElementById("place").innerHTML = place.places[0]["place name"] +
+        ", " +
+        place.places[0].state +
+        ", " +
+        place.country;
+    }
+}
