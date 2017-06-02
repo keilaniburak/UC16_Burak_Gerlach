@@ -14,7 +14,6 @@
       <h2>Foreign Exchange Rates and Currency Conversion</h2>
       <br/>
       <p>Find the country's currency that you want to convert. For example, <b>CAD</b> (Candaian dollar) to <b>USD</b> (US dollar)</p>
-
         <div class="container">
             <label for="currency">Currency:</label>
             <select id="currency">
@@ -45,20 +44,17 @@
                 <option value=USD>US Dollar (US)</option>
                 <option value=ZAR>South African Rand (ZAR)</option>
             </select>
-            <button type="button" onclick="get_(document.getElementById('').value)">Exchange Currency</button>
+            <button class='btn btn-success btn-large' onclick="get_(document.getElementById('').value)">Exchange Currency</button>
         </div>
         <br>
         <div>
         <div id="zipbox" class="control-group">
           <label for="amount">Amount</label>
           <input type="text" name="zip" id="zip" placeholder="Type your ZIP code" />
+        <button class='btn btn-success btn-large' onclick="findZip('zip')">Find Zip Code</button>
         </div>
       </div>
-      <br />
-      <div>
-        <button class='btn btn-success btn-large' onclick="findZip('zip')">Find Zip Code</button>
-      </div>
-      <br />
+         <br />
       <div>
         <div id="place" class=""></div>
       </div>
