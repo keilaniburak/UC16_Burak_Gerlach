@@ -2,6 +2,7 @@
  * Uses AJAX to query an internet data source for zip codes
  * @param {string} zipId The element id that has the zip code
  */
+
 function findZip(zipId) {
     // First get the zip code from the HTML textbox
     var zip = document.getElementById(zipId).value;
@@ -33,6 +34,7 @@ function findZip(zipId) {
  * Displays the zip code place given the JSON data
  * @param {string} data JSON data representing place for given zip code
  */
+
 function displayPlace(data){
     var place = JSON.parse(data);
     if(place.country === "none") {
